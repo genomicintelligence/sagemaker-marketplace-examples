@@ -1,0 +1,58 @@
+{
+  "task": "promoter",
+  "model": "g0-promoter-2000bp",
+  "input": {
+    "sequence_name": "ACTB_promoter"
+  },
+  "summary": {
+    "total_windows": 2,
+    "promoter_windows": 2,
+    "threshold_used": 0.5
+  },
+  "regions": [
+    {
+      "name": "promoter_1",
+      "start": 0,
+      "end": 1000,
+      "score": 0.9832595586776733,
+      "strand": ".",
+      "chrom": ""
+    },
+    {
+      "name": "promoter_2",
+      "start": 1000,
+      "end": 2000,
+      "score": 0.8295007944107056,
+      "strand": ".",
+      "chrom": ""
+    }
+  ],
+  "window_details": [
+    {
+      "window_index": 0,
+      "prediction_start": 0,
+      "prediction_end": 1000,
+      "context_start": 0,
+      "context_end": 1500,
+      "left_padding": 500,
+      "right_padding": 0,
+      "probability": 0.9832595586776733,
+      "is_positive": true
+    },
+    {
+      "window_index": 1,
+      "prediction_start": 1000,
+      "prediction_end": 2000,
+      "context_start": 500,
+      "context_end": 2000,
+      "left_padding": 0,
+      "right_padding": 500,
+      "probability": 0.8295007944107056,
+      "is_positive": true
+    }
+  ],
+  "formats": {
+    "bed": "track name=\"promoters\" description=\"ACTB_promoter via g0-promoter-2000bp\"\nACTB_promoter\t0\t1000\tpromoter_1\t0.9833\t.\nACTB_promoter\t1000\t2000\tpromoter_2\t0.8295\t.",
+    "bedgraph": "track type=bedGraph name=\"promoter_scores\" description=\"ACTB_promoter\"\nACTB_promoter\t0\t1000\t0.9833\nACTB_promoter\t1000\t2000\t0.8295"
+  }
+}

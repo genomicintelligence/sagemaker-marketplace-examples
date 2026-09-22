@@ -1,0 +1,49 @@
+{
+  "assembly": "GRCh38",
+  "source": "Ensembl REST API. Each sequence can be re-fetched from its refetch URL.",
+  "responses": "Captured 2026-09-21 from the same model the Marketplace package serves. Probabilities from your instance can differ in the last few bits.",
+  "samples": [
+    {
+      "name": "ACTB_promoter",
+      "label": "promoter",
+      "gene": "ACTB",
+      "transcript": "ENST00000646664",
+      "assembly": "GRCh38",
+      "chromosome": "chr7",
+      "start": 5529602,
+      "end": 5531601,
+      "strand": "-",
+      "tss": 5530601,
+      "length": 2000,
+      "refetch": "https://rest.ensembl.org/sequence/region/human/7:5529602..5531601:-1?coord_system_version=GRCh38;content-type=application/json"
+    },
+    {
+      "name": "GAPDH_promoter",
+      "label": "promoter",
+      "gene": "GAPDH",
+      "transcript": "ENST00000229239",
+      "assembly": "GRCh38",
+      "chromosome": "chr12",
+      "start": 6533517,
+      "end": 6535516,
+      "strand": "+",
+      "tss": 6534517,
+      "length": 2000,
+      "refetch": "https://rest.ensembl.org/sequence/region/human/12:6533517..6535516:1?coord_system_version=GRCh38;content-type=application/json"
+    },
+    {
+      "name": "chr3_intergenic",
+      "label": "non-promoter",
+      "gene": null,
+      "transcript": null,
+      "assembly": "GRCh38",
+      "chromosome": "chr3",
+      "start": 80000000,
+      "end": 80001999,
+      "strand": "+",
+      "tss": null,
+      "length": 2000,
+      "refetch": "https://rest.ensembl.org/sequence/region/human/3:80000000..80001999:1?coord_system_version=GRCh38;content-type=application/json"
+    }
+  ]
+}
