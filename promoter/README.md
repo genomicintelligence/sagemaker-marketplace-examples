@@ -71,8 +71,6 @@ packages.
 
 The model localises a promoter to a 1000 bp window, not to a transcription
 start site, and has no notion of strand. It was trained on human sequence.
-GC-rich sequence that is not a promoter can score high: a human coding
-sequence scored 0.73 and 0.76 in our checks, and one intergenic interval 0.68.
-Treat a high score as a candidate to confirm.
+Not suitable for sequence containing coding exons.
 
 Research use only. Not for diagnostic or clinical use.
