@@ -17,3 +17,5 @@ Research use only. These models are not medical devices and are not for
 diagnostic or clinical use.
 
 Support: contact@genomicintelligence.ai
+
+The notebook and code here are MIT-0 (see `LICENSE`). The sample sequences are public GRCh38 data from Ensembl. The model itself is licensed separately, through the AWS Marketplace listing.
