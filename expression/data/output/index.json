@@ -1,0 +1,64 @@
+{
+  "model": "g0-expression-8192",
+  "image_digest": "sha256:6d3c85cc936d8e12e51536a6dc70ba8d3df4802021ca76f7b5ce58c788d48409",
+  "endpoint_instance_type": "ml.g4dn.xlarge",
+  "generated_at": "2026-09-23T19:50:10Z",
+  "samples": {
+    "APOA1_HepG2": {
+      "request": "APOA1_HepG2.request.json",
+      "response": "APOA1_HepG2.response.json",
+      "sequence_bp": 43160,
+      "tss_index": 40960,
+      "tes_index": 43160,
+      "description": "assay term name is polyA plus RNA-seq. biosample summary is Homo sapiens HepG2.",
+      "expression_log_tpm": 8.8205,
+      "expression_tpm": 6770.3809,
+      "scored_window": [
+        14474,
+        43160
+      ]
+    },
+    "APOA1_K562": {
+      "request": "APOA1_K562.request.json",
+      "response": "APOA1_K562.response.json",
+      "sequence_bp": 43160,
+      "tss_index": 40960,
+      "tes_index": 43160,
+      "description": "assay term name is polyA plus RNA-seq. biosample summary is Homo sapiens K562.",
+      "expression_log_tpm": 1.4694,
+      "expression_tpm": 3.3468,
+      "scored_window": [
+        14474,
+        43160
+      ]
+    },
+    "HBB_HepG2": {
+      "request": "HBB_HepG2.request.json",
+      "response": "HBB_HepG2.response.json",
+      "sequence_bp": 41770,
+      "tss_index": 40960,
+      "tes_index": 41770,
+      "description": "assay term name is polyA plus RNA-seq. biosample summary is Homo sapiens HepG2.",
+      "expression_log_tpm": 0.1036,
+      "expression_tpm": 0.1092,
+      "scored_window": [
+        14800,
+        41770
+      ]
+    },
+    "HBB_K562": {
+      "request": "HBB_K562.request.json",
+      "response": "HBB_K562.response.json",
+      "sequence_bp": 41770,
+      "tss_index": 40960,
+      "tes_index": 41770,
+      "description": "assay term name is polyA plus RNA-seq. biosample summary is Homo sapiens K562.",
+      "expression_log_tpm": 2.6586,
+      "expression_tpm": 13.2757,
+      "scored_window": [
+        14800,
+        41770
+      ]
+    }
+  }
+}

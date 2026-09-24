@@ -1,0 +1,36 @@
+{
+  "assembly": "GRCh38",
+  "annotation": "GENCODE V29, the transcript per gene the model was trained with (see ../gene_table.tsv)",
+  "sequence_source": "Ensembl REST /sequence/region/human/<chrom>:<start>..<end>:<strand>",
+  "convention": "Each sequence runs from 40,960 bp upstream of the TSS through the TES, in the gene's orientation. tss_index is the 0-based position of the TSS in the sequence; tes_index is one past the TES (the sequence length).",
+  "genes": [
+    {
+      "gene": "APOA1",
+      "gene_id": "ENSG00000118137.9",
+      "transcript": "ENST00000236850.4",
+      "chrom": "chr11",
+      "start": 116835751,
+      "end": 116878910,
+      "strand": "-",
+      "tss": 116837950,
+      "tes": 116835751,
+      "length": 43160,
+      "tss_index": 40960,
+      "tes_index": 43160
+    },
+    {
+      "gene": "HBB",
+      "gene_id": "ENSG00000244734.4",
+      "transcript": "ENST00000485743.1",
+      "chrom": "chr11",
+      "start": 5226263,
+      "end": 5268032,
+      "strand": "-",
+      "tss": 5227072,
+      "tes": 5226263,
+      "length": 41770,
+      "tss_index": 40960,
+      "tes_index": 41770
+    }
+  ]
+}
