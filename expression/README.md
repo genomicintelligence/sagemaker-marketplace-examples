@@ -53,18 +53,20 @@ accelerators use different reduced-precision arithmetic (fp16 on
 |---|---|---|
 | `sequence` | yes | GRCh38 DNA in the gene's orientation, A, C, G, T, N |
 | `tss_index` | yes | 0-based position of the transcription start site in `sequence`; at least 40,960 |
-| `tes_index` | yes | Exclusive end of the gene: `sequence[tss_index:tes_index]` is the gene body. Greater than `tss_index`, at most the sequence length |
+| `tes_index` | no, recommended | Exclusive end of the gene: `sequence[tss_index:tes_index]` is the gene body. Greater than `tss_index`, at most the sequence length. If omitted, the model reads past the TSS to the end of the sequence or its token budget (about 27 kb). Giving it matches how the model was trained and improves accuracy for genes shorter than about 27 kb. |
 | `options.description` | yes | The cell type or tissue, exactly as written in the published cell-type list |
 | `sequence_name` | no | Free label, echoed back |
 
 To build a request from `gene_table.tsv`: fetch `chrom:region_start-region_end`
 from GRCh38, reverse-complement it if `strand` is `-`, then set `tss_index` to
-40960 and `tes_index` to the sequence length. Submit the sequence in the
+40960 and `tes_index` to the sequence length (recommended). Submit the sequence in the
 gene's own orientation: only its length is checked, so a wrong-strand
 submission returns a confident wrong answer rather than an error.
 
 `tes_index` is **exclusive**: `sequence[tss_index:tes_index]` is the gene
-body. An off-by-one there does not error, it just changes the score.
+body. An off-by-one there does not error, it just changes the score. Leaving
+it out is allowed, but for a gene shorter than about 27 kb the model then
+reads past the gene end, which can lower the value.
 
 Requests with less than 40,960 bp upstream of the TSS are rejected. **Do not
 pad the upstream end with N to satisfy the rule**: an under-filled upstream
