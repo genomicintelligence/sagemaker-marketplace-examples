@@ -51,8 +51,9 @@ slightly.
 
 To build a request, fetch the gene's region from GRCh38 (for example with the
 Ensembl REST API), from 40,960 bp upstream of the transcription start site to
-the end of the gene, in the gene's orientation. Then `tss_index` is 40960 and
-`tes_index` is the length of the sequence.
+the end of the gene, in the gene's orientation. Set `tss_index` to 40960 (the
+transcription start site) and `tes_index` to the position where the gene ends,
+which for this region is the length of the sequence.
 
 ## Response
 
