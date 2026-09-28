@@ -1,0 +1,58 @@
+{
+  "task": "promoter",
+  "model": "g0-promoter-2000bp",
+  "input": {
+    "sequence_name": "GAPDH_promoter"
+  },
+  "summary": {
+    "total_windows": 2,
+    "promoter_windows": 2,
+    "threshold_used": 0.5
+  },
+  "regions": [
+    {
+      "name": "promoter_1",
+      "start": 0,
+      "end": 1000,
+      "score": 0.7955427765846252,
+      "strand": ".",
+      "chrom": ""
+    },
+    {
+      "name": "promoter_2",
+      "start": 1000,
+      "end": 2000,
+      "score": 0.7904259562492371,
+      "strand": ".",
+      "chrom": ""
+    }
+  ],
+  "window_details": [
+    {
+      "window_index": 0,
+      "prediction_start": 0,
+      "prediction_end": 1000,
+      "context_start": 0,
+      "context_end": 1500,
+      "left_padding": 500,
+      "right_padding": 0,
+      "probability": 0.7955427765846252,
+      "is_positive": true
+    },
+    {
+      "window_index": 1,
+      "prediction_start": 1000,
+      "prediction_end": 2000,
+      "context_start": 500,
+      "context_end": 2000,
+      "left_padding": 0,
+      "right_padding": 500,
+      "probability": 0.7904259562492371,
+      "is_positive": true
+    }
+  ],
+  "formats": {
+    "bed": "track name=\"promoters\" description=\"GAPDH_promoter via g0-promoter-2000bp\"\nGAPDH_promoter\t0\t1000\tpromoter_1\t0.7955\t.\nGAPDH_promoter\t1000\t2000\tpromoter_2\t0.7904\t.",
+    "bedgraph": "track type=bedGraph name=\"promoter_scores\" description=\"GAPDH_promoter\"\nGAPDH_promoter\t0\t1000\t0.7955\nGAPDH_promoter\t1000\t2000\t0.7904"
+  }
+}
