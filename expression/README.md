@@ -43,17 +43,19 @@ slightly.
 
 | Field | Required | Meaning |
 |---|---|---|
-| `sequence` | yes | Human DNA (A, C, G, T, N) in the gene's orientation, starting at least 40,960 bp upstream of the transcription start site and running through the gene |
+| `sequence` | yes | Human DNA (A, C, G, T, N) containing the gene of interest, in the gene's orientation, with at least 40,960 bp upstream of the transcription start site |
 | `tss_index` | yes | 0-based position of the transcription start site in `sequence` |
-| `tes_index` | no, recommended | 0-based, exclusive end of the gene in `sequence` |
+| `tes_index` | no | 0-based, exclusive end of the gene in `sequence`, if the sequence includes it |
 | `options.description` | yes | Free-text description of the cell type, tissue or experimental context |
 | `sequence_name` | no | A label, echoed back |
 
-To build a request, fetch the gene's region from GRCh38 (for example with the
-Ensembl REST API), from 40,960 bp upstream of the transcription start site to
-the end of the gene, in the gene's orientation. Set `tss_index` to 40960 (the
-transcription start site) and `tes_index` to the position where the gene ends,
-which for this region is the length of the sequence.
+To build a request, provide a DNA sequence containing the gene of interest, in
+the gene's orientation, preferably centred on its transcription start site,
+with at least 40,960 bp upstream so the model sees the regulatory context. Set
+`tss_index` to the position of the transcription start site. If the sequence
+includes the end of the gene, you can also set `tes_index`. The samples here
+run from 40,960 bp upstream of the transcription start site to the end of the
+gene, so `tss_index` is 40960 and `tes_index` is the length of the sequence.
 
 ## Response
 
