@@ -1,0 +1,24 @@
+{
+  "task": "expression",
+  "model": "g0-expression-8192",
+  "input": {
+    "sequence_name": "APOA1_whole_blood",
+    "description": "id is Whole Blood. genome is hg38. assay is RNA-seq. tissue is Whole Blood. description is The data was loaded from recount3.",
+    "tss_index": 40960
+  },
+  "summary": {
+    "expression_log_tpm": 0.6208,
+    "expression_tpm": 0.8604,
+    "sequence_length": 43160
+  },
+  "prediction": {
+    "expression": 0.6208,
+    "expression_log_tpm": 0.6208,
+    "expression_tpm": 0.8604,
+    "unit": "log(TPM+1)"
+  },
+  "scored_window": [
+    14474,
+    43160
+  ]
+}

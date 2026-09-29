@@ -1,0 +1,24 @@
+{
+  "task": "expression",
+  "model": "g0-expression-8192",
+  "input": {
+    "sequence_name": "APOA1_HepG2",
+    "description": "assay term name is polyA plus RNA-seq. description is RNA-seq on human HepG2. biosample summary is Homo sapiens HepG2. life stage age is child 15 years. perturbed is False. strand specificity is unstranded. genome annotation is V29. mapped run type is paired-ended. id is ENCFF410NOU. genome is GRCh38.",
+    "tss_index": 40960
+  },
+  "summary": {
+    "expression_log_tpm": 8.2503,
+    "expression_tpm": 3827.6261,
+    "sequence_length": 43160
+  },
+  "prediction": {
+    "expression": 8.2503,
+    "expression_log_tpm": 8.2503,
+    "expression_tpm": 3827.6261,
+    "unit": "log(TPM+1)"
+  },
+  "scored_window": [
+    14474,
+    43160
+  ]
+}
