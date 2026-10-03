@@ -21,12 +21,12 @@ chr17:43044295-43170245	g0-annotation	exon	83907	84402	.	+	.	ID=gene_000002.t1.e
 chr17:43044295-43170245	g0-annotation	CDS	83958	84185	.	+	0	ID=gene_000002.t1.cds1;Parent=gene_000002.t1;mean_probability=0.037566
 chr17:43044295-43170245	g0-annotation	mRNA	82075	84402	.	+	.	ID=gene_000002.t2;Parent=gene_000002;lncRNA_probability=0.328971;mRNA_probability=0.671029;exon_segmentation_confidence=0.788950;cds_segmentation_confidence=0.038508;segmentation_confidence=0.038508;color=#66cc66
 chr17:43044295-43170245	g0-annotation	exon	82075	82157	.	+	.	ID=gene_000002.t2.exon1;Parent=gene_000002.t2;mean_probability=0.779559
-chr17:43044295-43170245	g0-annotation	exon	83905	84402	.	+	.	ID=gene_000002.t2.exon2;Parent=gene_000002.t2;mean_probability=0.798342
+chr17:43044295-43170245	g0-annotation	exon	83905	84402	.	+	.	ID=gene_000002.t2.exon2;Parent=gene_000002.t2;mean_probability=0.798341
 chr17:43044295-43170245	g0-annotation	CDS	83958	84185	.	+	0	ID=gene_000002.t2.cds1;Parent=gene_000002.t2;mean_probability=0.038508
 chr17:43044295-43170245	g0-annotation	gene	110347	125561	.	-	.	ID=gene_000003;Name=gene_000003
 chr17:43044295-43170245	g0-annotation	lnc_RNA	110347	125561	.	-	.	ID=gene_000003.t1;Parent=gene_000003;lncRNA_probability=0.708461;mRNA_probability=0.291539;exon_segmentation_confidence=0.840287;cds_segmentation_confidence=0.000000;segmentation_confidence=0.840287;color=#0c0c78
 chr17:43044295-43170245	g0-annotation	exon	110347	115433	.	-	.	ID=gene_000003.t1.exon1;Parent=gene_000003.t1;mean_probability=0.867107
-chr17:43044295-43170245	g0-annotation	exon	120532	120536	.	-	.	ID=gene_000003.t1.exon2;Parent=gene_000003.t1;mean_probability=0.610237
+chr17:43044295-43170245	g0-annotation	exon	120532	120536	.	-	.	ID=gene_000003.t1.exon2;Parent=gene_000003.t1;mean_probability=0.610238
 chr17:43044295-43170245	g0-annotation	exon	122686	122956	.	-	.	ID=gene_000003.t1.exon3;Parent=gene_000003.t1;mean_probability=0.900081
 chr17:43044295-43170245	g0-annotation	exon	125463	125561	.	-	.	ID=gene_000003.t1.exon4;Parent=gene_000003.t1;mean_probability=0.983722
 chr17:43044295-43170245	g0-annotation	lnc_RNA	122984	125561	.	-	.	ID=gene_000003.t2;Parent=gene_000003;lncRNA_probability=0.717871;mRNA_probability=0.282129;exon_segmentation_confidence=0.844297;cds_segmentation_confidence=0.000000;segmentation_confidence=0.844297;color=#0c0c78
