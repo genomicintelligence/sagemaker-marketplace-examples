@@ -1,0 +1,514 @@
+{
+  "assembly": "GRCh38",
+  "source": "Ensembl REST API, plus strand. Each sequence can be re-fetched from its source URL.",
+  "responses": "Captured 2026-10-03 from the model the Marketplace package serves.",
+  "samples": [
+    {
+      "name": "hbb_10kb",
+      "region": "chr11:5225001-5235000",
+      "length": 10000,
+      "source": "https://rest.ensembl.org/sequence/region/human/11:5225001..5235000:1",
+      "fetched": "2026-10-03T03:11:36+00:00",
+      "ensembl_genes": [
+        {
+          "gene_id": "ENSG00000285498",
+          "name": null,
+          "biotype": "TEC",
+          "strand": "-",
+          "start": 5224309,
+          "end": 5225461
+        },
+        {
+          "gene_id": "ENSG00000298932",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "+",
+          "start": 5225464,
+          "end": 5243179
+        },
+        {
+          "gene_id": "ENSG00000223609",
+          "name": "HBD",
+          "biotype": "protein_coding",
+          "strand": "-",
+          "start": 5232678,
+          "end": 5243698
+        },
+        {
+          "gene_id": "ENSG00000244734",
+          "name": "HBB",
+          "biotype": "protein_coding",
+          "strand": "-",
+          "start": 5225464,
+          "end": 5229395
+        }
+      ]
+    },
+    {
+      "name": "brca1_126kb",
+      "region": "chr17:43044295-43170245",
+      "length": 125951,
+      "source": "https://rest.ensembl.org/sequence/region/human/17:43044295..43170245:1",
+      "fetched": "2026-10-03T03:11:39+00:00",
+      "ensembl_genes": [
+        {
+          "gene_id": "ENSG00000240828",
+          "name": "RPL21P4",
+          "biotype": "processed_pseudogene",
+          "strand": "+",
+          "start": 43079302,
+          "end": 43079780
+        },
+        {
+          "gene_id": "ENSG00000285057",
+          "name": null,
+          "biotype": "transcribed_unprocessed_pseudogene",
+          "strand": "+",
+          "start": 43131208,
+          "end": 43131270
+        },
+        {
+          "gene_id": "ENSG00000267681",
+          "name": null,
+          "biotype": "transcribed_processed_pseudogene",
+          "strand": "+",
+          "start": 43144956,
+          "end": 43145255
+        },
+        {
+          "gene_id": "ENSG00000267595",
+          "name": "BRCA1P1",
+          "biotype": "unprocessed_pseudogene",
+          "strand": "-",
+          "start": 43168170,
+          "end": 43168249
+        },
+        {
+          "gene_id": "ENSG00000267340",
+          "name": null,
+          "biotype": "transcribed_processed_pseudogene",
+          "strand": "-",
+          "start": 43169880,
+          "end": 43170077
+        },
+        {
+          "gene_id": "ENSG00000198496",
+          "name": "NBR2",
+          "biotype": "lncRNA",
+          "strand": "+",
+          "start": 43125420,
+          "end": 43153671
+        },
+        {
+          "gene_id": "ENSG00000267002",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "-",
+          "start": 43148366,
+          "end": 43171037
+        },
+        {
+          "gene_id": "ENSG00000108830",
+          "name": "RND2",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 43025210,
+          "end": 43047509
+        },
+        {
+          "gene_id": "ENSG00000012048",
+          "name": "BRCA1",
+          "biotype": "protein_coding",
+          "strand": "-",
+          "start": 43044292,
+          "end": 43170245
+        }
+      ]
+    },
+    {
+      "name": "dense_500kb",
+      "region": "chr19:1000001-1500000",
+      "length": 500000,
+      "source": "https://rest.ensembl.org/sequence/region/human/19:1000001..1500000:1",
+      "fetched": "2026-10-03T03:11:45+00:00",
+      "ensembl_genes": [
+        {
+          "gene_id": "ENSG00000280486",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "-",
+          "start": 1385473,
+          "end": 1389665
+        },
+        {
+          "gene_id": "ENSG00000248015",
+          "name": "NDUFS7-AS1",
+          "biotype": "lncRNA",
+          "strand": "-",
+          "start": 1392170,
+          "end": 1396467
+        },
+        {
+          "gene_id": "ENSG00000268798",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "+",
+          "start": 1440839,
+          "end": 1441938
+        },
+        {
+          "gene_id": "ENSG00000267317",
+          "name": "APC2-AS1",
+          "biotype": "lncRNA",
+          "strand": "-",
+          "start": 1457670,
+          "end": 1458580
+        },
+        {
+          "gene_id": "ENSG00000240846",
+          "name": "RPS15P9",
+          "biotype": "processed_pseudogene",
+          "strand": "-",
+          "start": 1307401,
+          "end": 1307719
+        },
+        {
+          "gene_id": "ENSG00000267372",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "+",
+          "start": 1321225,
+          "end": 1322846
+        },
+        {
+          "gene_id": "ENSG00000279488",
+          "name": null,
+          "biotype": "TEC",
+          "strand": "-",
+          "start": 1372238,
+          "end": 1374364
+        },
+        {
+          "gene_id": "ENSG00000267755",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "-",
+          "start": 1376773,
+          "end": 1377520
+        },
+        {
+          "gene_id": "ENSG00000267736",
+          "name": "HMGB2P1",
+          "biotype": "transcribed_processed_pseudogene",
+          "strand": "+",
+          "start": 1203209,
+          "end": 1203842
+        },
+        {
+          "gene_id": "ENSG00000267493",
+          "name": "CIRBP-AS1",
+          "biotype": "lncRNA",
+          "strand": "-",
+          "start": 1267471,
+          "end": 1270260
+        },
+        {
+          "gene_id": "ENSG00000099617",
+          "name": "EFNA2",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1285873,
+          "end": 1301431
+        },
+        {
+          "gene_id": "ENSG00000301705",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "-",
+          "start": 1443064,
+          "end": 1447360
+        },
+        {
+          "gene_id": "ENSG00000267778",
+          "name": "CBARP-DT",
+          "biotype": "lncRNA",
+          "strand": "+",
+          "start": 1229108,
+          "end": 1239529
+        },
+        {
+          "gene_id": "ENSG00000298805",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "+",
+          "start": 1245394,
+          "end": 1247031
+        },
+        {
+          "gene_id": "ENSG00000288704",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "-",
+          "start": 1245890,
+          "end": 1249629
+        },
+        {
+          "gene_id": "ENSG00000295949",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "-",
+          "start": 1281799,
+          "end": 1284471
+        },
+        {
+          "gene_id": "ENSG00000301067",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "+",
+          "start": 1021516,
+          "end": 1021883
+        },
+        {
+          "gene_id": "ENSG00000279753",
+          "name": null,
+          "biotype": "TEC",
+          "strand": "-",
+          "start": 1038727,
+          "end": 1039064
+        },
+        {
+          "gene_id": "ENSG00000064687",
+          "name": "ABCA7",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1039997,
+          "end": 1065572
+        },
+        {
+          "gene_id": "ENSG00000228300",
+          "name": "FAM174C",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1276021,
+          "end": 1279244
+        },
+        {
+          "gene_id": "ENSG00000290166",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "+",
+          "start": 1163420,
+          "end": 1165333
+        },
+        {
+          "gene_id": "ENSG00000306100",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "+",
+          "start": 1170085,
+          "end": 1175008
+        },
+        {
+          "gene_id": "ENSG00000266990",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "-",
+          "start": 999796,
+          "end": 1002757
+        },
+        {
+          "gene_id": "ENSG00000116032",
+          "name": "GRIN3B",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1000419,
+          "end": 1009732
+        },
+        {
+          "gene_id": "ENSG00000274177",
+          "name": null,
+          "biotype": "lncRNA",
+          "strand": "+",
+          "start": 1010221,
+          "end": 1010907
+        },
+        {
+          "gene_id": "ENSG00000207357",
+          "name": "RNU6-2",
+          "biotype": "snRNA",
+          "strand": "+",
+          "start": 1021522,
+          "end": 1021628
+        },
+        {
+          "gene_id": "ENSG00000119559",
+          "name": "C19orf25",
+          "biotype": "protein_coding",
+          "strand": "-",
+          "start": 1461143,
+          "end": 1479565
+        },
+        {
+          "gene_id": "ENSG00000064932",
+          "name": "SBNO2",
+          "biotype": "protein_coding",
+          "strand": "-",
+          "start": 1107634,
+          "end": 1174295
+        },
+        {
+          "gene_id": "ENSG00000118046",
+          "name": "STK11",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1177558,
+          "end": 1228431
+        },
+        {
+          "gene_id": "ENSG00000071626",
+          "name": "DAZAP1",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1407533,
+          "end": 1435687
+        },
+        {
+          "gene_id": "ENSG00000115266",
+          "name": "APC2",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1446302,
+          "end": 1473244
+        },
+        {
+          "gene_id": "ENSG00000160953",
+          "name": "PWWP3A",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1354293,
+          "end": 1378434
+        },
+        {
+          "gene_id": "ENSG00000115286",
+          "name": "NDUFS7",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1383527,
+          "end": 1395590
+        },
+        {
+          "gene_id": "ENSG00000099622",
+          "name": "CIRBP",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1259384,
+          "end": 1274880
+        },
+        {
+          "gene_id": "ENSG00000099817",
+          "name": "POLR2E",
+          "biotype": "protein_coding",
+          "strand": "-",
+          "start": 1085104,
+          "end": 1095486
+        },
+        {
+          "gene_id": "ENSG00000099624",
+          "name": "ATP5F1D",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1241734,
+          "end": 1244828
+        },
+        {
+          "gene_id": "ENSG00000182087",
+          "name": "TMEM259",
+          "biotype": "protein_coding",
+          "strand": "-",
+          "start": 1009615,
+          "end": 1021270
+        },
+        {
+          "gene_id": "ENSG00000167468",
+          "name": "GPX4",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1103982,
+          "end": 1106791
+        },
+        {
+          "gene_id": "ENSG00000167470",
+          "name": "MIDN",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1248316,
+          "end": 1259145
+        },
+        {
+          "gene_id": "ENSG00000180448",
+          "name": "ARHGAP45",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1065923,
+          "end": 1087829
+        },
+        {
+          "gene_id": "ENSG00000130005",
+          "name": "GAMT",
+          "biotype": "protein_coding",
+          "strand": "-",
+          "start": 1397026,
+          "end": 1401731
+        },
+        {
+          "gene_id": "ENSG00000115257",
+          "name": "PCSK4",
+          "biotype": "protein_coding",
+          "strand": "-",
+          "start": 1481428,
+          "end": 1490752
+        },
+        {
+          "gene_id": "ENSG00000310576",
+          "name": "FAM174C",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1275509,
+          "end": 1279244
+        },
+        {
+          "gene_id": "ENSG00000115268",
+          "name": "RPS15",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1438149,
+          "end": 1440508
+        },
+        {
+          "gene_id": "ENSG00000064666",
+          "name": "CNN2",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1026270,
+          "end": 1039077
+        },
+        {
+          "gene_id": "ENSG00000115255",
+          "name": "REEP6",
+          "biotype": "protein_coding",
+          "strand": "+",
+          "start": 1491016,
+          "end": 1497928
+        },
+        {
+          "gene_id": "ENSG00000099625",
+          "name": "CBARP",
+          "biotype": "protein_coding",
+          "strand": "-",
+          "start": 1228282,
+          "end": 1239465
+        }
+      ]
+    }
+  ]
+}

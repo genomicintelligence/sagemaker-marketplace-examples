@@ -1,0 +1,126 @@
+{
+  "task": "annotation",
+  "model": "g0-annotation",
+  "input": {
+    "sequence_name": "chr11:5225001-5235000"
+  },
+  "summary": {
+    "total_transcripts": 2,
+    "forward_strand": 0,
+    "reverse_strand": 2,
+    "avg_length": 1628,
+    "min_length": 1607,
+    "max_length": 1650,
+    "raw_intervals": 2,
+    "filtered_intervals": 2,
+    "transcripts_with_structure": 2,
+    "mrna": 2,
+    "lnc_rna": 0
+  },
+  "transcripts": [
+    {
+      "name": "transcript_1",
+      "start": 466,
+      "end": 2073,
+      "strand": "-",
+      "score": 0.992228,
+      "length": 1607,
+      "tss_position": 2073,
+      "polya_position": 466,
+      "transcript_type": "mRNA",
+      "transcript_type_score": 0.991106,
+      "exons": [
+        {
+          "start": 466,
+          "end": 726
+        },
+        {
+          "start": 1576,
+          "end": 1799
+        },
+        {
+          "start": 1929,
+          "end": 2073
+        }
+      ],
+      "introns": [
+        {
+          "start": 726,
+          "end": 1576
+        },
+        {
+          "start": 1799,
+          "end": 1929
+        }
+      ],
+      "cds": [
+        {
+          "start": 597,
+          "end": 726
+        },
+        {
+          "start": 1576,
+          "end": 1799
+        },
+        {
+          "start": 1929,
+          "end": 2021
+        }
+      ]
+    },
+    {
+      "name": "transcript_2",
+      "start": 7834,
+      "end": 9484,
+      "strand": "-",
+      "score": 0.995817,
+      "length": 1650,
+      "tss_position": 9484,
+      "polya_position": 7834,
+      "transcript_type": "mRNA",
+      "transcript_type_score": 0.986815,
+      "exons": [
+        {
+          "start": 7834,
+          "end": 8092
+        },
+        {
+          "start": 8990,
+          "end": 9213
+        },
+        {
+          "start": 9341,
+          "end": 9484
+        }
+      ],
+      "introns": [
+        {
+          "start": 8092,
+          "end": 8990
+        },
+        {
+          "start": 9213,
+          "end": 9341
+        }
+      ],
+      "cds": [
+        {
+          "start": 7963,
+          "end": 8092
+        },
+        {
+          "start": 8990,
+          "end": 9213
+        },
+        {
+          "start": 9341,
+          "end": 9433
+        }
+      ]
+    }
+  ],
+  "formats": {
+    "bed": "track name=\"transcripts\" description=\"chr11:5225001-5235000 via g0-annotation\"\nchr11\t466\t2073\ttranscript_1\t0.9922\t-\nchr11\t7834\t9484\ttranscript_2\t0.9958\t-",
+    "gff3": "##gff-version 3\nchr11:5225001-5235000\tg0-annotation\tgene\t467\t2073\t.\t-\t.\tID=gene_000001;Name=gene_000001\nchr11:5225001-5235000\tg0-annotation\tmRNA\t467\t2073\t.\t-\t.\tID=gene_000001.t1;Parent=gene_000001;lncRNA_probability=0.008894;mRNA_probability=0.991106;exon_segmentation_confidence=0.994044;cds_segmentation_confidence=0.992228;segmentation_confidence=0.992228;color=#66cc66\nchr11:5225001-5235000\tg0-annotation\texon\t467\t726\t.\t-\t.\tID=gene_000001.t1.exon1;Parent=gene_000001.t1;mean_probability=0.999095\nchr11:5225001-5235000\tg0-annotation\texon\t1577\t1799\t.\t-\t.\tID=gene_000001.t1.exon2;Parent=gene_000001.t1;mean_probability=0.999272\nchr11:5225001-5235000\tg0-annotation\texon\t1930\t2073\t.\t-\t.\tID=gene_000001.t1.exon3;Parent=gene_000001.t1;mean_probability=0.983765\nchr11:5225001-5235000\tg0-annotation\tCDS\t598\t726\t.\t-\t0\tID=gene_000001.t1.cds1;Parent=gene_000001.t1;mean_probability=0.995791\nchr11:5225001-5235000\tg0-annotation\tCDS\t1577\t1799\t.\t-\t1\tID=gene_000001.t1.cds2;Parent=gene_000001.t1;mean_probability=0.999203\nchr11:5225001-5235000\tg0-annotation\tCDS\t1930\t2021\t.\t-\t0\tID=gene_000001.t1.cds3;Parent=gene_000001.t1;mean_probability=0.981691\nchr11:5225001-5235000\tg0-annotation\tgene\t7835\t9484\t.\t-\t.\tID=gene_000002;Name=gene_000002\nchr11:5225001-5235000\tg0-annotation\tmRNA\t7835\t9484\t.\t-\t.\tID=gene_000002.t1;Parent=gene_000002;lncRNA_probability=0.013185;mRNA_probability=0.986815;exon_segmentation_confidence=0.997003;cds_segmentation_confidence=0.995817;segmentation_confidence=0.995817;color=#0c0c78\nchr11:5225001-5235000\tg0-annotation\texon\t7835\t8092\t.\t-\t.\tID=gene_000002.t1.exon1;Parent=gene_000002.t1;mean_probability=0.999399\nchr11:5225001-5235000\tg0-annotation\texon\t8991\t9213\t.\t-\t.\tID=gene_000002.t1.exon2;Parent=gene_000002.t1;mean_probability=0.998984\nchr11:5225001-5235000\tg0-annotation\texon\t9342\t9484\t.\t-\t.\tID=gene_000002.t1.exon3;Parent=gene_000002.t1;mean_probability=0.992626\nchr11:5225001-5235000\tg0-annotation\tCDS\t7964\t8092\t.\t-\t0\tID=gene_000002.t1.cds1;Parent=gene_000002.t1;mean_probability=0.996659\nchr11:5225001-5235000\tg0-annotation\tCDS\t8991\t9213\t.\t-\t1\tID=gene_000002.t1.cds2;Parent=gene_000002.t1;mean_probability=0.998930\nchr11:5225001-5235000\tg0-annotation\tCDS\t9342\t9433\t.\t-\t0\tID=gene_000002.t1.cds3;Parent=gene_000002.t1;mean_probability=0.991863\n"
+  }
+}

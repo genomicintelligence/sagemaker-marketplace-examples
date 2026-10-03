@@ -6,8 +6,9 @@ AWS account.
 
 | Model | Folder | Listing |
 |---|---|---|
-| Promoter prediction (DNA, 2000 bp context) | [`promoter/`](promoter/) | Not yet public |
-| Gene expression prediction (DNA, cell-type aware) | [`expression/`](expression/) | [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-r5ytjcekc52y6) |
+| Promoter prediction | [`promoter/`](promoter/) | Not yet public |
+| Gene expression prediction | [`expression/`](expression/) | [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-r5ytjcekc52y6) |
+| Gene annotation | [`annotation/`](annotation/) | Not yet public |
 
 Each folder has sample requests and responses for the real-time endpoint and
 batch transform, and a notebook that subscribes, deploys, runs both, and

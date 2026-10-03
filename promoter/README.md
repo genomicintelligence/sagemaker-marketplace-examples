@@ -1,4 +1,4 @@
-# Promoter prediction (DNA, 2000 bp context)
+# Promoter prediction
 
 Scores human DNA for promoter activity. The model reads a 2000 bp context
 window and returns a promoter probability for each 1000 bp stretch of the

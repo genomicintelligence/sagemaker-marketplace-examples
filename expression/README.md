@@ -1,6 +1,6 @@
-# Gene expression prediction (DNA, cell-type aware)
+# Gene expression prediction
 
-Predicts how strongly a human gene is expressed in the cell type, tissue or
+Predicts how strongly a gene is expressed in the cell type, tissue or
 experimental context you describe, directly from its DNA sequence.
 
 - [`expression_model_package.ipynb`](expression_model_package.ipynb): deploy
@@ -48,7 +48,7 @@ slightly.
 
 | Field | Required | Meaning |
 |---|---|---|
-| `sequence` | yes | Human DNA (A, C, G, T, N) containing the gene of interest, in the gene's orientation, with at least 40,960 bp upstream of the transcription start site |
+| `sequence` | yes | DNA (A, C, G, T, N) containing the gene of interest, in the gene's orientation, with at least 40,960 bp upstream of the transcription start site |
 | `tss_index` | yes | 0-based position of the transcription start site in `sequence` |
 | `tes_index` | no | 0-based, exclusive end of the gene in `sequence`, if the sequence includes it |
 | `options.description` | yes | Free-text description of the cell type, tissue or experimental context, for example "hepatocyte", "erythroblast", and a detailed description of an RNA-seq experiment as in the samples |
