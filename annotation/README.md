@@ -1,6 +1,6 @@
 # Gene annotation
 
-Finds genes in a DNA sequence and reconstructs the structure of each
+Finds genes on both strands of a DNA sequence and reconstructs the structure of each
 transcript: start and end, exons, introns and coding sequence, with each
 transcript typed as mRNA or lncRNA. Results come back as JSON, GFF3 or BED.
 
@@ -37,8 +37,8 @@ real-time limit and run through batch transform.
 | Field | Required | Constraints |
 |---|---|---|
 | `sequence` | yes | A, C, G, T, N, any case. 1,000 to 500,000 bp (real-time endpoint: up to 75,000 bp) |
-| `sequence_name` | no | Up to 128 characters, no line breaks. Used as the sequence ID in GFF3 and BED |
-| `options.reverse_complement` | no | Default `true`: annotate both strands |
+| `sequence_name` | no | Up to 128 characters, no line breaks. A label, used as the GFF3 sequence ID; BED uses the part before `:` as the chromosome |
+| `options.reverse_complement` | no | Default `true`: average with a reverse-complement pass. Both strands are annotated either way; `false` runs a single pass |
 | `options.shift_coordinates` | no | `"UCSC"` reports coordinates on the `chrN:start-end` locus named in `sequence_name` |
 
 ## Response
@@ -55,9 +55,13 @@ Each entry in `transcripts[]` has `start`, `end` (zero-based, half-open),
 `strand`, `score`, `tss_position`, `polya_position`, `transcript_type`
 (`mRNA` or `lnc_RNA`) with its score, and `exons`, `introns` and `cds`.
 
-Errors: 400 invalid request, 413 a real-time request above 75,000 bp (use
-batch transform), 415 unsupported Content-Type or Accept, 503 while the
-endpoint is starting.
+Errors: 400 invalid request; 413 real-time request above 75,000 bp (use batch
+transform); 415 unsupported Content-Type or Accept; 500 inference failed; 503
+the endpoint is busy with another request (retry after a few seconds, or use
+batch transform for concurrent work).
+
+The samples were run without `shift_coordinates`, so their coordinates are
+relative to each sequence. On a reference genome, set `shift_coordinates` to `"UCSC"` with a `chrN:start-end` name.
 
 ## Invoke a deployed endpoint
 
